@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Thông Tin</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts/time.js"></script>
+    <link rel="icon" href="favicon.ico">
+</head>
+<body onload="showClock(24)">
+    
+    <div class="container">
+        <header>
+            <img src="images/backgrbien.jpg" width="100%">
+            <marquee style="color:rgb(15, 9, 97) ;font-size: larger ;" behavior="scroll" direction="left">
+                "Chào mừng các bạn đã đến với những Chuyến Du Lịch không muốn trở về"
+            </marquee>
+
+        </header>
+
+        <section class="logo">
+            <img src="images/logo.png" alt="">           
+
+        </section>
+        <nav>
+            <ul>
+               
+                <li><a href="index.html">Trang Chủ</a></li>
+                <li><a href="baiviet.html">Bài Viết</a></li>
+                <li><a href="diadiem.html">Địa Điểm</a></li>
+                <li><a href="menu.html">MeNu Giới Thiệu</a></li>
+                <li><a href="lab.html">Lab</a></li>
+                <li><a href="thongtin.html">Liên Hệ</a></li>
+                
+            </ul>
+
+
+        </nav>
+
+        <div style="width:500px; margin:0 auto; border:thin solid #000">
+            <form name="frmdangkithanhvien" action="xl.php" method="post" onsubmit="return kiemtra()" >
+                <table border="0" width="100%">
+                <tr>
+                <td colspan="2" align="center"><b>Thông Tin Khách Hàng</b></td></tr>
+                
+                <tr><td colspan="2"><hr /></td></tr>
+                <tr><td colspan="2"><b>THÔNG TIN CÁ NHÂN</b></td></tr> 	
+                
+                <tr><td>Họ tên</td>
+                <td><input type="text" id="idFullName" name="nmFullName" size="50"/></td>
+                </tr>
+                <tr><td>Ngày sinh</td>
+                <td><input type="date" id="idBirthDate" name="nmBirthDate"  /></td>
+                </tr>
+                <tr><td>Giới tính</td>
+                <td><input type="radio" id="idMale" name="nmGender" checked="checked" />Nam<br/>
+                <input type="radio" id="idFemale" name="nmGender" />Nữ
+                </td>
+                </tr>
+                <tr><td>Địa chỉ email</td>
+                <td><input type="email" id="idEmail" name="nmEmailAdd" size="50" /></td>
+                </tr>
+                <tr>
+                    <td>Hình đại diện</td>
+                    <td><input type="file" id="idFile" name="nmFile" /></td>
+                </tr>
+                <tr><td>Địa chỉ</td>	
+                <td><input type="text" id="idAddress" name="nmAddress" size="50"/></td>
+                </tr>
+                <tr><td>Điện thoại</td>
+                <td><input type="tel" id="idPhone" name="nmCellphone" size="50"/></td>
+                </tr>
+                <tr>
+                <td colspan="2" align="center"><br/>
+                    <a href="index.html"><button class="btn-product btn">Đăng Kí</button></a>
+                 
+                <input type="reset" name="nmReset" value="Xóa" /> </td>
+                </tr>
+               </table> 
+            </form>
+        </div>
+
+        <footer>
+           <p style="color: rgb(48, 10, 61);">
+            TênSV: Nguyễn Trần Lâm Vũ 
+            <br>MSSV : DH52004312 </p>
+        <div id="clock" style="background:url(images/digital-clock/cb.gif); width:220px; text-align:center">
+        <table width="144" border="0" cellpadding="0" cellspacing="0" align="center">
+            <tr>
+                <td height="21"><img src="images/digital-clock/c0.gif" id="h1" name="h1" /></td>
+                <td height="21"><img src="images/digital-clock/c0.gif" id="h2" name="h2" /></td>
+                <td height="21"><img src="images/digital-clock/colon.gif" id="cc1" name="cc1" /></td>
+                <td height="21"><img src="images/digital-clock/c0.gif" id="m1" name="m1" /></td>
+                <td height="21"><img src="images/digital-clock/c0.gif" id="m2" name="m2" /></td>
+                <td height="21"><img src="images/digital-clock/colon.gif" id="cc2" name="cc2" /></td>
+                <td height="21"><img src="images/digital-clock/c0.gif" id="s1" name="s1" /></td>
+                <td height="21"><img src="images/digital-clock/c0.gif" id="s2" name="s2" /></td>
+                <td height="21"><img src="images/digital-clock/cam.gif" id="ap" name="ap" /></td>
+            </tr>
+            
+        </table>
+        <div id="date"></div>
+    </div>
+        </footer>
+        <div id="backtop">
+            <i class="fa-sharp fa-solid fa-chevron-up">TOP</i>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+            <script>
+                $(document).ready(function(){
+                    $(window).scroll(function(){
+                        if($(this).scrollTop()){
+                            $("#backtop").fadeIn();
+                        }else {
+                            $("#backtop").fadeOut();
+                        }
+                    });
+                    $("#backtop").click(function(){
+                        $("html,body").animate({
+                            scrollTop:0
+                        },1000);
+                    });
+                });
+        
+        </script>     
+    </div>
+</body>
+</html>

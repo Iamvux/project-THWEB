@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>MeNu Giới Thiệu</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts/mau.js"></script>
+    <script src="scripts/time.js"></script>
+    <script src="scripts/gototop.js"></script>
+    <link rel="icon" href="favicon.ico">
+</head>
+<body onload="showClock(24)">
+    <div class="container">
+        <header>
+            <img src="images/backsao.jpg" width="100%">
+            <marquee style="color:rgb(15, 9, 97) ;font-size: larger ;" behavior="scroll" direction="left">
+                "Chào mừng các bạn đã đến với những Chuyến Du Lịch không muốn trở về"
+            </marquee>
+        </header>
+
+        <section class="logo">
+            <img src="images/logo.png" alt="">
+            <div id="clock" style="background:url(images/digital-clock/cb.gif); width:220px; text-align:center">
+                <table width="144" border="0" cellpadding="0" cellspacing="0" align="center">
+                    <tr>
+                        <td height="21"><img src="images/digital-clock/c0.gif" id="h1" name="h1" /></td>
+                        <td height="21"><img src="images/digital-clock/c0.gif" id="h2" name="h2" /></td>
+                        <td height="21"><img src="images/digital-clock/colon.gif" id="cc1" name="cc1" /></td>
+                        <td height="21"><img src="images/digital-clock/c0.gif" id="m1" name="m1" /></td>
+                        <td height="21"><img src="images/digital-clock/c0.gif" id="m2" name="m2" /></td>
+                        <td height="21"><img src="images/digital-clock/colon.gif" id="cc2" name="cc2" /></td>
+                        <td height="21"><img src="images/digital-clock/c0.gif" id="s1" name="s1" /></td>
+                        <td height="21"><img src="images/digital-clock/c0.gif" id="s2" name="s2" /></td>
+                        <td height="21"><img src="images/digital-clock/cam.gif" id="ap" name="ap" /></td>
+                    </tr>
+                    
+                </table>
+                <div id="date"></div>
+            </div>
+
+        </section>
+
+        <nav>
+            <ul>
+               
+                <li><a href="index.html">Trang Chủ</a></li>
+                <li><a href="baiviet.html">Bài Viết</a></li>
+                <li><a href="diadiem.html">Địa Điểm</a></li>
+                <li><a href="menu.html">MeNu Giới Thiệu</a></li>
+                <li><a href="lab.html">Lab</a></li>
+                <li><a href="thongtin.html">Liên Hệ</a></li>
+                
+            </ul>
+
+
+        </nav>
+
+        <section class="content">
+            
+
+            <div class="post">
+                <div class="post-content">
+                    <div class="post-detail">
+                        <h2>Mục Lục</h2>
+                        <ol>
+                            <li ><em><h4>Mục đích đề tài</h4></em> 
+                               
+                                <p>
+                                     - Giới Thiệu Về Các Chuyến Du lịch Xuyên Quốc Gia và Thế Giới
+                                    <br>- Đặc Biệt giới thiệu về các điểm du lịch ở quê hương Bình Phươc của Tôi
+                                </p>
+                            </li>
+
+                            <li> <em><h4> các chức năng đã làm trong đề tài</h4></em>
+                                <p>
+                                    - Tương thích với thiết bị di động.
+                                    
+                                    <br> - Sử dụng thuộc tính Marquee 
+                                    <br> - Nút Go to top.
+                                    <br> - Xây dựng form giao diện Đăng ký.
+                                    <br> - Hình Ảnh chuyển động
+                                    <br> - thày đổi con trỏ khi rê chuột vào button
+                                    <br> - kiểm tra địa chỉ email
+                                    <br> - phóng to hình ảnh khi rê trỏ đến hình Ảnh
+                                    <br> - có các đường dẫn ở các button 
+                                    <br> - form lựa chọn màu nền 
+                                    <br> - hiển thị thời gian bằng mảng hình ảnh 
+                                    <br> - hiệu ứng hover menu 
+                                    <br> - ẩn thông tin                              
+                                </p>
+                            </li>
+                            <li><em><h4>Ghi rõ nguồn sử dụng hình ảnh, video, Template</h4></em>
+                            <p>
+                            <a href=https://www.bachhoaxanh.com/kinh-nghiem-hay/ke-ten-10-dia-diem-du-lich-dep-nhat-tai-binh-phuoc-ma-ban-khong-the-bo-lo-1366326 target="_blank">Hình ảnh </a>
+                            <br> - Tham khảo Template từ các bài mẫu thực hành Giảng Viên: Nguyễn Trọng Nghĩa.
+                            <br>
+                            <a href=https://elitetour.com.vn/lich-trinh-hap-dan/10-tour-du-lich-doc-nhat-vo-nhi-chi-co-o-viet-nam target="_blank">Bài Viết</a>
+                            </p>
+                            </li>
+                        </ol>
+                       
+                    </div>
+                    <img src="images/qr.jpg"  alt="">
+                </div>
+            </div>           
+        </section>
+        <footer>
+            <p style="color: rgb(48, 10, 61);">
+                TênSV: Nguyễn Trần Lâm Vũ 
+                <br>MSSV : DH52004312 </p>
+            <form>
+                <input required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" type="text" placeholder="Địa chỉ Email">
+                <button class="btn btn-ft">Gửi</button>
+            </form>
+            <form id="frm" name="frm" method="post" action="">
+            <label>Màu:
+              <select name="mau" id="mau"  onchange="MauNen();">
+              <option value="white" selected="selected">Trắng</option>
+              <option value="#DDA0DD">Tím</option>
+              <option value="33FFFF">Xanh cyan</option>
+              <option value="green">Xanh lá</option>
+              <option value="#D3D3D3">Khói</option>
+              <option value="993366">Hồng</option>
+         </select>
+            </label>
+            </form>
+        </footer>
+        <div id="backtop">
+            <i class="fa-sharp fa-solid fa-chevron-up">TOP</i>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+            <script>
+                $(document).ready(function(){
+                    $(window).scroll(function(){
+                        if($(this).scrollTop()){
+                            $("#backtop").fadeIn();
+                        }else {
+                            $("#backtop").fadeOut();
+                        }
+                    });
+                    $("#backtop").click(function(){
+                        $("html,body").animate({
+                            scrollTop:0
+                        },1000);
+                    });
+                });
+        
+        </script>     
+    </div>
+   
+</body>
+</html>
